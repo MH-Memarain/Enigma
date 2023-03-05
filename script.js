@@ -10,3 +10,11 @@ function TurnDown(router) {
     let item = router.shift();
     router.push(item);
 }
+alert(alphbet)
+function Reflector(character) {
+    let item = alphbet.findIndex(function (alphbet) {
+        return alphbet == character
+    })
+    item = (alphbet.length - item)-1;    
+    return item;
+}
