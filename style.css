@@ -3,7 +3,7 @@
     src: url(font/Warover-Stencil-FFP.ttf);    
 }
 @font-face {
-    font-family: font2;
+    font-family: navigation_font;
     src: url(font/Roobek.otf);      
 }
 
@@ -36,15 +36,18 @@ nav{
     top: 0px;
     position: sticky;
 }
-nav ul{
-    padding: 20px;        
+nav ul{    
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
 }
 nav li{
-    display: inline;
-    padding: 3em;
+    padding:0px 50px;
+    list-style-type: none;
     cursor: pointer;
-    font-family: font2;    
-    font-size: 20px;    
+    font-family: navigation_font;        
     color : rgb(255, 234, 117);
     transition-duration:0.75s;
     
