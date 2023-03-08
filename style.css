@@ -47,12 +47,28 @@ nav li{
     padding:0px 50px;
     list-style-type: none;
     cursor: pointer;
-    font-family: navigation_font;        
-    color : rgb(255, 234, 117);
+    font-family: navigation_font;            
     transition-duration:0.75s;
     
+}
+li a.nav_li{
+    color : rgb(255, 234, 117);
 }
 nav li:hover{    
     text-shadow: -10px 10px 4px #3e3700;
     text-align: end;    
+}
+h2{
+    text-align: center;
+    color: #b9963b;
+    padding: 0.5em;    
+    font-size: 5em;
+}
+p.text{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0em 2em;
+}
+a{
+    text-decoration: none;
 }
