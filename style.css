@@ -6,13 +6,20 @@
     font-family: navigation_font;
     src: url(font/Roobek.otf);      
 }
-
+@font-face {
+    font-family: header_text;
+    src: url(font/SHADSER.TTF);
+}
+/* body style */
 *{
     margin: 0px;
     padding: 0px;
 }
 body{    
     background-color: khaki;
+}
+a{
+    text-decoration: none;
 }
 header{
     background-image: url(image/header.jpg);
@@ -29,6 +36,7 @@ header h2{
     color: #b9963b;
     font-family: header_font;
 }
+/* navigation style */
 nav{
     width: 100%;
     height: 60px;
@@ -58,25 +66,24 @@ nav li:hover{
     text-shadow: -10px 10px 4px #3e3700;
     text-align: end;    
 }
+/* about war II style */
 h2{
     text-align: center;
     color: #b9963b;
     padding: 0.5em;    
     font-size: 5em;
+    font-family: header_text;
 }
 p.text{
     text-align: center;
-    font-size: 1.5em;
-    padding: 0em 2em;                
-}
-a{
-    text-decoration: none;
+    font-size: 1em;    
+    color: olive;
+    font-family: 'Courier New', Courier, monospace;
 }
 .about_world_war_2_container_one{
     display: flex;
     margin: 0px auto;
     width: 90%;
-
 }
 .about_world_war_2_img{
     height: 20em;    
@@ -86,4 +93,27 @@ a{
     margin: 0px auto;
     width: 90%;    
     flex-direction: row-reverse;
+}
+.about_world_war_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);            
+    grid-column-gap: 10px;
+}
+.img_war_1{
+    display: flex;    
+    align-self: center;
+    margin: 0px auto;
+    width: 90%;
+}
+.img_war_2{
+    grid-row: 2/3;
+    width: 40%;
+    margin: 0px auto;
+    display: flex;    
+    align-self: center;
+}
+.p_about_war_2{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
