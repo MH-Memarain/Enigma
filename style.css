@@ -1,119 +1,147 @@
 @font-face {
     font-family: header_font;
-    src: url(font/Warover-Stencil-FFP.ttf);    
+    src: url(font/Warover-Stencil-FFP.ttf);
 }
+
 @font-face {
     font-family: navigation_font;
-    src: url(font/Roobek.otf);      
+    src: url(font/Roobek.otf);
 }
+
 @font-face {
     font-family: header_text;
     src: url(font/SHADSER.TTF);
 }
+
+@font-face {
+    font-family: paragraph;
+    src: url(font/TT\ Marxiana\ Trial\ Antiqua\ Italic.ttf);
+    src: url(font/TT\ Marxiana\ Trial\ Antiqua.ttf);
+}
+
 /* body style */
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{    
+
+body {
     background-color: khaki;
 }
-a{
+
+a {
     text-decoration: none;
 }
-header{
+
+header {
     background-image: url(image/header.jpg);
     background-repeat: no-repeat;
-    background-position: center;    
+    background-position: center;
     background-size: cover;
     width: 100%;
-    height: 650px;    
+    height: 650px;
 }
-header h2{
+
+header h2 {
     text-align: center;
     padding-top: 40px;
     font-size: 50px;
     color: #b9963b;
     font-family: header_font;
 }
+
 /* navigation style */
-nav{
+nav {
     width: 100%;
     height: 60px;
     background-color: #b9963b;
     top: 0px;
     position: sticky;
 }
-nav ul{    
+
+nav ul {
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+
 }
-nav li{
-    padding:0px 50px;
+
+nav li {
+    padding: 0px 50px;
     list-style-type: none;
     cursor: pointer;
-    font-family: navigation_font;            
-    transition-duration:0.75s;
-    
+    font-family: navigation_font;
+    transition-duration: 0.75s;
+
 }
-li a.nav_li{
-    color : rgb(255, 234, 117);
+
+li a.nav_li {
+    color: rgb(255, 234, 117);
 }
-nav li:hover{    
+
+nav li:hover {
     text-shadow: -10px 10px 4px #3e3700;
-    text-align: end;    
+    text-align: end;
 }
+
 /* about war II style */
-h2{
+h2 {
     text-align: center;
     color: #b9963b;
-    padding: 0.5em;    
+    padding: 0.5em;
     font-size: 5em;
     font-family: header_text;
 }
-p.text{
+
+p.text {
     text-align: center;
-    font-size: 1em;    
-    color: olive;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    font-family: paragraph;
+    color: #001a42;
+    padding: 50px;
 }
-.about_world_war_2_container_one{
+
+.about_world_war_2_container_one {
     display: flex;
     margin: 0px auto;
     width: 90%;
 }
-.about_world_war_2_img{
-    height: 20em;    
+
+.about_world_war_2_img {
+    height: 20em;
 }
-.about_world_war_2_container_two{
+
+.about_world_war_2_container_two {
     display: flex;
     margin: 0px auto;
-    width: 90%;    
+    width: 90%;
     flex-direction: row-reverse;
 }
-.about_world_war_container{
+
+.about_world_war_container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);            
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
 }
-.img_war_1{
-    display: flex;    
+
+.img_war_1 {
+    display: flex;
     align-self: center;
     margin: 0px auto;
     width: 90%;
 }
-.img_war_2{
+
+.img_war_2 {
     grid-row: 2/3;
     width: 40%;
     margin: 0px auto;
-    display: flex;    
+    display: flex;
     align-self: center;
 }
-.p_about_war_2{
+
+.p_about_war_2 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
