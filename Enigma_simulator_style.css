@@ -12,51 +12,43 @@ div.simulator_enigma_container{
     width: 80%;
     display: grid;
     grid-template-rows: repeat(3,1fr);
+    border:20px solid transparent;
+    border-image-source: url('image/wood.jpg');
+    border-image-slice: 35%;    
 }
 .top_simulator_enigma_machine{    
     display: flex;
     padding: 20px;
-    justify-content: center;
+    justify-content: center;    
 }
 .itme_router_top_simulator_enigma_machin{
-    margin: 20px;
+    
+    height: 15em;
+    margin: 0px 5px;    
 }
-.i1_router_top_simulator_enigma_machin{
-    height: 50px;
-    width: 50px;    
-    background-color: blue;
-    padding: 10px;
+.numbring_simulator_enigma_machin{
+    /* background-color: rgb(173, 173, 183); */
+    background-image: linear-gradient(120deg , rgb(0, 0, 0), #bd961fc2, rgb(0, 0, 0));
+    border-radius: 50%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-.i2_router_top_simulator_enigma_machin{
-    height: 50px;
-    width: 50px;    
-    background-color: blue;
-    padding: 10px;
+.router_number{
+    padding: 20px;
+    background-image: linear-gradient(20deg , #a49464,#44200075, #ead999);    
+    border: 3px black solid;    
+    font-size: 25px;
+    font-weight: bold;
 }
-.i3_router_top_simulator_enigma_machin{
-    height: 50px;
-    width: 50px;    
-    background-color: blue;
-    padding: 10px;
+.router_disign_simulator_enigma_machin{
+    background-image: linear-gradient(to top , white, rgba(0, 0, 0, 0.300) , white,  rgba(0, 0, 0, 0.300)  , white , rgba(0, 0, 0, 0.300)  , white ,  rgba(0, 0, 0, 0.300) , white ,  rgba(0, 0, 0, 0.300) , white ,  rgba(0, 0, 0, 0.300) );
+    border: 1px black solid;
+    width: 2%;
 }
-.i4_router_top_simulator_enigma_machin{
-    height: 50px;
-    width: 50px;    
-    background-color: blue;
-    padding: 10px;
-}
-.i5_router_top_simulator_enigma_machin{
-    height: 50px;
-    width: 50px;    
-    background-color: blue;
-    padding: 10px;
-}
-.i6_router_top_simulator_enigma_machin{
-    height: 50px;
-    width: 50px;    
-    background-color: blue;
-    padding: 10px;
-}
+
 .simulator_enigma_item_2{
     background-image: url(image/brown-crumpled-paper-texture.jpg);    
     background-size: cover;        
@@ -64,6 +56,11 @@ div.simulator_enigma_container{
     height: 100%;    
     width: 85%;
     padding: 10px;
+}
+.enigma_simulator_breack_line{    
+    border: 5px rgba(0, 0, 0, 0.5) solid;
+    box-shadow: 0px 2px 5px black;
+    height: 1px;
 }
 .simulator_enigma_item_2 table{
     /* background-color: #d5ab5e82; */
