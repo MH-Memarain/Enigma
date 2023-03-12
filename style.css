@@ -159,16 +159,62 @@ p.text {
 
 div.simulator_enigma_container{
     display:flex;
-    flex-direction: column;
-    /* height: 32em;     */
+    flex-direction: column;    
     width: 100%;
     word-wrap: break-word;    
 }
 .simulator_enigma_itme_1{
     background-image: url("image/enigma_machine_background.jpg");       
+    background-size: cover;
     margin: auto;
     height: 100%;    
-    width: 60%;
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+.top_simulator_enigma_machine{    
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+.itme_router_top_simulator_enigma_machin{
+    margin: 20px;
+}
+.i1_router_top_simulator_enigma_machin{
+    height: 50px;
+    width: 50px;    
+    background-color: blue;
+    padding: 10px;
+}
+.i2_router_top_simulator_enigma_machin{
+    height: 50px;
+    width: 50px;    
+    background-color: blue;
+    padding: 10px;
+}
+.i3_router_top_simulator_enigma_machin{
+    height: 50px;
+    width: 50px;    
+    background-color: blue;
+    padding: 10px;
+}
+.i4_router_top_simulator_enigma_machin{
+    height: 50px;
+    width: 50px;    
+    background-color: blue;
+    padding: 10px;
+}
+.i5_router_top_simulator_enigma_machin{
+    height: 50px;
+    width: 50px;    
+    background-color: blue;
+    padding: 10px;
+}
+.i6_router_top_simulator_enigma_machin{
+    height: 50px;
+    width: 50px;    
+    background-color: blue;
+    padding: 10px;
 }
 .simulator_enigma_item_2{
     background-image: url(image/brown-crumpled-paper-texture.jpg);    
@@ -197,3 +243,11 @@ div.simulator_enigma_container{
     /* border: 1px solid black; */    
     font-size: 1.5em;
 }
+
+
+
+
+
+
+
+
