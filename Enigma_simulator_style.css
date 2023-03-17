@@ -9,14 +9,14 @@ div.simulator_enigma_container{
     background-size: cover;
     margin: auto;
     height: 100%;    
-    width: 80%;
+    width: 70%;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: 3fr 0fr  2.7fr 0fr 2.7fr;
     border:20px solid transparent;
     border-image-source: url('image/wood.jpg');
     border-image-slice: 35%;    
 }
-.top_simulator_enigma_machine{    
+.setup_simulator_enigma_machine{    
     display: flex;
     padding: 20px;
     justify-content: center;    
@@ -27,18 +27,19 @@ div.simulator_enigma_container{
     margin: 0px 5px;    
 }
 .numbring_simulator_enigma_machin{
-    /* background-color: rgb(173, 173, 183); */
-    background-image: linear-gradient(120deg , rgb(0, 0, 0), #bd961fc2, rgb(0, 0, 0));
-    border-radius: 50%;
-    width: 10%;
+    /* background-color: rgb(173, 173, 183); */        
+     width: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    height: 60%;
+    margin: 5% 30px;    
+    background-color: #5b5b5b;
 }
 .router_number{
     padding: 20px;
-    background-image: linear-gradient(20deg , #a49464,#44200075, #ead999);    
+    background-image: linear-gradient(20deg , #383838,#ff963a75, #3a3a3a);    
     border: 3px black solid;    
     font-size: 25px;
     font-weight: bold;
@@ -48,7 +49,44 @@ div.simulator_enigma_container{
     border: 1px black solid;
     width: 2%;
 }
-
+.key_simulator_enigma_machine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.simulator_enigma_button_container{
+    display: flex;
+    align-items: end baseline;
+    width: 80%;
+}
+.simulator_enigma_button{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: auto;    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;    
+}
+.light_button{        
+    background-image: radial-gradient(#4f4f4f , #4f4f4f, #3e3e3e , black);
+    border:5px #5b5b5b solid;
+    background-color: #4f4f4f;
+    color: #00000066;
+}
+.click_button{
+    box-shadow: 10px 11px 7px 2px black;
+    background-image: radial-gradient(#4f4f4f , #4f4f4f, #3e3e3e , black);
+    background-color:#3b3b39;     
+    border:3px rgb(199, 199, 199) solid ;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
 .simulator_enigma_item_2{
     background-image: url(image/brown-crumpled-paper-texture.jpg);    
     background-size: cover;        
@@ -60,7 +98,7 @@ div.simulator_enigma_container{
 .enigma_simulator_breack_line{    
     border: 5px rgba(0, 0, 0, 0.5) solid;
     box-shadow: 0px 2px 5px black;
-    height: 1px;
+    height: 1px;    
 }
 .simulator_enigma_item_2 table{
     /* background-color: #d5ab5e82; */
