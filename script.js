@@ -71,9 +71,9 @@ function RotateRotour() {
         RouterNumber1 +=1
         TurnUp(router1)
     }
-    RouterShow1.innerHTML = RouterNumber1 + 1;
-    RouterShow2.innerHTML = RouterNumber2 + 1;
-    RouterShow3.innerHTML = RouterNumber3 + 1;
+    RouterShow1.innerHTML = RouterNumber1;
+    RouterShow2.innerHTML = RouterNumber2;
+    RouterShow3.innerHTML = RouterNumber3;
 }
 function Reflector(character) {
     return alphbet[alphbet.length - alphbet.findIndex(Element => Element == character) - 1];
