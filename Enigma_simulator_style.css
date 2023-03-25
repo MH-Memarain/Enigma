@@ -21,8 +21,7 @@ div.simulator_enigma_container{
     padding: 20px;
     justify-content: center;    
 }
-.itme_router_top_simulator_enigma_machin{
-    
+.itme_router_top_simulator_enigma_machin{    
     height: 15em;
     margin: 0px 5px;    
 }
@@ -55,6 +54,7 @@ div.simulator_enigma_container{
     background-image: linear-gradient(to top , black,white,#171717d1,white,#171717d1 , white, #171717d1, white , #171717d1, white , black);
     border: 5.5px #3d3d3db2 solid;
     width: 25px;
+    position: relative;
 }
 .key_simulator_enigma_machine{
     display: flex;
@@ -125,4 +125,18 @@ div.simulator_enigma_container{
 .simulator_enigma_item_2 table th{
     /* border: 1px solid black; */    
     font-size: 1.5em;
+}
+.router_top_tourn_up{            
+    height: 20%;
+    width: 100%;    
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+}
+.router_down_tourn_down{            
+    height: 20%;
+    width: 100%;    
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
 }
