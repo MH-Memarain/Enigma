@@ -31,6 +31,9 @@ let Z = document.getElementById("z_light_button");
 let RouterNumber1 = 0;
 let RouterNumber2 = 0;
 let RouterNumber3 = 0;
+let RouterShow1 = document.getElementById("router_1")
+let RouterShow2 = document.getElementById("router_2")
+let RouterShow3 = document.getElementById("router_3")
 function TurnUp(router) {
     let item = router.pop();
     router.unshift(item);
@@ -40,40 +43,95 @@ function TurnDown(router) {
     router.push(item);
 }
 function RotateRotour() {
-    let RouterShow1 = document.getElementById("router_1")
-    let RouterShow2 = document.getElementById("router_2")
-    let RouterShow3 = document.getElementById("router_3")
-    if(RouterNumber1 == 26 )
-    {
+    if (RouterNumber1 == 26) {
         RouterNumber1 = 0;
         router1 = ["E", "K", "M", "F", "L", "G", "D", "Q", "V", "Z", "N", "T", "O", "W", "Y", "H", "X", "U", "S", "P", "A", "I", "B", "R", "C", "J"];
-        if(RouterNumber2 == 26 )
-        {
-            RouterNumber2 =0;
+        if (RouterNumber2 == 26) {
+            RouterNumber2 = 0;
             router2 = ["A", "J", "D", "K", "S", "I", "R", "U", "X", "B", "L", "H", "W", "T", "M", "C", "Q", "G", "Z", "N", "P", "Y", "F", "V", "O", "E"];
-            if(RouterNumber3 ==26)            
-            {
-                RouterNumber3 =  0 ;                            
+            if (RouterNumber3 == 26) {
+                RouterNumber3 = 0;
                 router3 = ["B", "D", "F", "H", "J", "L", "C", "P", "R", "T", "X", "V", "Z", "N", "Y", "E", "I", "W", "G", "A", "K", "M", "U", "S", "Q", "O"];
             }
-            else            
-            {
-                RouterNumber3 +=1;            
+            else {
+                RouterNumber3 += 1;
                 TurnUp(router3)
             }
         }
-        else        
-            RouterNumber2+=1        
-            TurnUp(router2)
+        else
+            RouterNumber2 += 1
+        TurnUp(router2)
     }
-    else
-    {
-        RouterNumber1 +=1
+    else {
+        RouterNumber1 += 1
         TurnUp(router1)
     }
     RouterShow1.innerHTML = RouterNumber1;
     RouterShow2.innerHTML = RouterNumber2;
     RouterShow3.innerHTML = RouterNumber3;
+}
+function GearOneRouterUp() {
+    if (RouterNumber1 != 26) {
+        TurnUp(router1);
+        RouterNumber1 += 1;
+        RouterShow1.innerHTML = RouterNumber1
+        document.getElementsByClassName("router_disign_simulator_enigma_machin")[0].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 ,white,#171717d1 , white , black)"
+        setTimeout(GearDisignOneTourning,1000)
+    }
+}
+function GearOneRouterDown() {
+    if (RouterNumber1 != 0) {
+        TurnDown(router1);
+        RouterNumber1 -= 1
+        RouterShow1.innerHTML = RouterNumber1
+        document.getElementsByClassName("router_disign_simulator_enigma_machin")[0].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 ,white,#171717d1 , white , black)"
+        setTimeout(GearDisignOneTourning,1000)
+    }
+}
+function GearTwoRouterUp() {
+    if (RouterNumber2 != 26) {
+        TurnUp(router2);
+        RouterNumber2 += 1
+        RouterShow2.innerHTML = RouterNumber2
+        document.getElementsByClassName("router_disign_simulator_enigma_machin")[1].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 ,white,#171717d1 , white , black)"
+        setTimeout(GearDisignTwoTourning,1000)
+    }
+}
+function GearTwoRouterDown() {
+    if (RouterNumber2 != 0) {
+        TurnDown(router2);
+        RouterNumber2 -= 1
+        RouterShow2.innerHTML = RouterNumber2
+        document.getElementsByClassName("router_disign_simulator_enigma_machin")[1].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 ,white,#171717d1 , white , black)"
+        setTimeout(GearDisignTwoTourning,1000)
+    }
+}
+function GearThreeRouterUp() {
+    if (RouterNumber3 != 26) {
+        TurnUp(router3);
+        RouterNumber3 += 1;
+        RouterShow3.innerHTML = RouterNumber3;
+        document.getElementsByClassName("router_disign_simulator_enigma_machin")[2].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 ,white,#171717d1 , white , black)"
+        setTimeout(GearDisignThreeTourning,1000)
+    }
+}
+function GearThreeRouterDown() {    
+    if (RouterNumber3 != 0) {
+        TurnDown(router3);
+        RouterNumber3 -= 1;
+        RouterShow3.innerHTML = RouterNumber3;                     
+        document.getElementsByClassName("router_disign_simulator_enigma_machin")[2].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 ,white,#171717d1 , white , black)"
+        setTimeout(GearDisignThreeTourning,1000)
+    }
+}
+function GearDisignOneTourning(){
+    document.getElementsByClassName("router_disign_simulator_enigma_machin")[0].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 , white, #171717d1, white , #171717d1, white , black)"
+}
+function GearDisignTwoTourning(){
+    document.getElementsByClassName("router_disign_simulator_enigma_machin")[1].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 , white, #171717d1, white , #171717d1, white , black)"
+}
+function GearDisignThreeTourning(){
+    document.getElementsByClassName("router_disign_simulator_enigma_machin")[2].style.backgroundImage = "linear-gradient(to top , black,white,#171717d1,white,#171717d1 , white, #171717d1, white , #171717d1, white , black)"
 }
 function Reflector(character) {
     return alphbet[alphbet.length - alphbet.findIndex(Element => Element == character) - 1];
@@ -356,4 +414,7 @@ function DefaultLightButton() {
     Y.style.color = "#00000066";
     Z.style.backgroundImage = "radial-gradient(#4f4f4f , #4f4f4f, #3e3e3e , black)";
     Z.style.color = "#00000066";
+}
+function DocumentChanged(){
+    
 }
