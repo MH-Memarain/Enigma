@@ -83,334 +83,345 @@
                 </p>
             </div>
             <h2 id="simulator_enigma">Simulator Enigma</h2>
-            <div class="simulator_enigma_container">
-                <div class="simulator_enigma_itme_1 simulator_items">
-                    <div class="setup_simulator_enigma_machine">
-                        <div class="numbring_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
-                            <img src="image/screw.png" alt="screw" width="20px">
-                            <span class="router_number" id="router_1">
-                                0
-                            </span>
-                            <img src="image/screw.png" alt="screw" width="20px">
+            <section class="simulator_enigma_main_container">
+                <div class="simulator_enigma_container">
+                    <div class="simulator_enigma_itme_1 simulator_items">
+                        <div class="setup_simulator_enigma_machine">
+                            <div class="numbring_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
+                                <img src="image/screw.png" alt="screw" width="20px">
+                                <span class="router_number" id="router_1">
+                                    0
+                                </span>
+                                <img src="image/screw.png" alt="screw" width="20px">
+                            </div>
+                            <div class="router_disign_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
+                                <span id="router1_top_tournup" class="router_top_tourn_up"
+                                    onclick="GearOneRouterUp()"></span>
+                                <span id="router1_bottom_tourndown" class="router_down_tourn_down"
+                                    onclick="GearOneRouterDown()"></span>
+                            </div>
+                            <div class="numbring_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
+                                <img src="image/screw.png" alt="screw" width="20px">
+                                <span class="router_number" id="router_2">
+                                    0
+                                </span>
+                                <img src="image/screw.png" alt="screw" width="20px">
+                            </div>
+                            <div class="router_disign_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
+                                <span id="router2_top_tournup" class="router_top_tourn_up"
+                                    onclick="GearTwoRouterUp()"></span>
+                                <span id="router2_bottom_tourndown" class="router_down_tourn_down"
+                                    onclick="GearTwoRouterDown()"></span>
+                            </div>
+                            <div class="numbring_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
+                                <img src="image/screw.png" alt="screw" width="20px">
+                                <span class="router_number" id="router_3">
+                                    0
+                                </span>
+                                <img src="image/screw.png" alt="screw" width="20px">
+                            </div>
+                            <div class="router_disign_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
+                                <span id="router3_top_tournup" class="router_top_tourn_up"
+                                    onclick="GearThreeRouterUp()"></span>
+                                <span id="router3_bottom_tourndown" class="router_down_tourn_down"
+                                    onclick="GearThreeRouterDown()"></span>
+                            </div>
                         </div>
-                        <div class="router_disign_simulator_enigma_machin itme_router_top_simulator_enigma_machin"></div>
-                        <div class="numbring_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
-                            <img src="image/screw.png" alt="screw" width="20px">
-                            <span class="router_number" id="router_2">
-                                0
-                            </span>
-                            <img src="image/screw.png" alt="screw" width="20px">
-                        </div>
-                        <div class="router_disign_simulator_enigma_machin itme_router_top_simulator_enigma_machin"></div>
-                        <div class="numbring_simulator_enigma_machin itme_router_top_simulator_enigma_machin">
-                            <img src="image/screw.png" alt="screw" width="20px">
-                            <span class="router_number" id="router_3">
-                                0
-                            </span>
-                            <img src="image/screw.png" alt="screw" width="20px">
-                        </div>
-                        <div class="router_disign_simulator_enigma_machin itme_router_top_simulator_enigma_machin"></div>
-                    </div>
-                    <hr class="enigma_simulator_breack_line">
-                    <div class="key_simulator_enigma_machine">
-                        <div class="simulator_enigma_button_container">
-                            <span class="simulator_enigma_button light_button" id="q_light_button">Q</span>
-                            <span class="simulator_enigma_button light_button" id="w_light_button">W</span>
-                            <span class="simulator_enigma_button light_button" id="e_light_button">E</span>
-                            <span class="simulator_enigma_button light_button" id="r_light_button">R</span>
-                            <span class="simulator_enigma_button light_button" id="t_light_button">T</span>
-                            <span class="simulator_enigma_button light_button" id="z_light_button">Z</span>
-                            <span class="simulator_enigma_button light_button" id="u_light_button">U</span>
-                            <span class="simulator_enigma_button light_button" id="i_light_button">I</span>
-                            <span class="simulator_enigma_button light_button" id="o_light_button">O</span>
-                        </div>
+                        <hr class="enigma_simulator_breack_line">
+                        <div class="key_simulator_enigma_machine">
+                            <div class="simulator_enigma_button_container">
+                                <span class="simulator_enigma_button light_button" id="q_light_button">Q</span>
+                                <span class="simulator_enigma_button light_button" id="w_light_button">W</span>
+                                <span class="simulator_enigma_button light_button" id="e_light_button">E</span>
+                                <span class="simulator_enigma_button light_button" id="r_light_button">R</span>
+                                <span class="simulator_enigma_button light_button" id="t_light_button">T</span>
+                                <span class="simulator_enigma_button light_button" id="z_light_button">Z</span>
+                                <span class="simulator_enigma_button light_button" id="u_light_button">U</span>
+                                <span class="simulator_enigma_button light_button" id="i_light_button">I</span>
+                                <span class="simulator_enigma_button light_button" id="o_light_button">O</span>
+                            </div>
 
-                        <div class="simulator_enigma_button_container">
-                            <span class="simulator_enigma_button light_button" id="a_light_button">A</span>
-                            <span class="simulator_enigma_button light_button" id="s_light_button">S</span>
-                            <span class="simulator_enigma_button light_button" id="d_light_button">D</span>
-                            <span class="simulator_enigma_button light_button" id="f_light_button">F</span>
-                            <span class="simulator_enigma_button light_button" id="g_light_button">G</span>
-                            <span class="simulator_enigma_button light_button" id="h_light_button">H</span>
-                            <span class="simulator_enigma_button light_button" id="j_light_button">J</span>
-                            <span class="simulator_enigma_button light_button" id="k_light_button">K</span>
-                        </div>
+                            <div class="simulator_enigma_button_container">
+                                <span class="simulator_enigma_button light_button" id="a_light_button">A</span>
+                                <span class="simulator_enigma_button light_button" id="s_light_button">S</span>
+                                <span class="simulator_enigma_button light_button" id="d_light_button">D</span>
+                                <span class="simulator_enigma_button light_button" id="f_light_button">F</span>
+                                <span class="simulator_enigma_button light_button" id="g_light_button">G</span>
+                                <span class="simulator_enigma_button light_button" id="h_light_button">H</span>
+                                <span class="simulator_enigma_button light_button" id="j_light_button">J</span>
+                                <span class="simulator_enigma_button light_button" id="k_light_button">K</span>
+                            </div>
 
-                        <div class="simulator_enigma_button_container">
-                            <span class="simulator_enigma_button light_button" id="p_light_button">P</span>
-                            <span class="simulator_enigma_button light_button" id="y_light_button">Y</span>
-                            <span class="simulator_enigma_button light_button" id="x_light_button">X</span>
-                            <span class="simulator_enigma_button light_button" id="c_light_button">C</span>
-                            <span class="simulator_enigma_button light_button" id="v_light_button">V</span>
-                            <span class="simulator_enigma_button light_button" id="b_light_button">B</span>
-                            <span class="simulator_enigma_button light_button" id="n_light_button">N</span>
-                            <span class="simulator_enigma_button light_button" id="m_light_button">M</span>
-                            <span class="simulator_enigma_button light_button" id="l_light_button">L</span>
+                            <div class="simulator_enigma_button_container">
+                                <span class="simulator_enigma_button light_button" id="p_light_button">P</span>
+                                <span class="simulator_enigma_button light_button" id="y_light_button">Y</span>
+                                <span class="simulator_enigma_button light_button" id="x_light_button">X</span>
+                                <span class="simulator_enigma_button light_button" id="c_light_button">C</span>
+                                <span class="simulator_enigma_button light_button" id="v_light_button">V</span>
+                                <span class="simulator_enigma_button light_button" id="b_light_button">B</span>
+                                <span class="simulator_enigma_button light_button" id="n_light_button">N</span>
+                                <span class="simulator_enigma_button light_button" id="m_light_button">M</span>
+                                <span class="simulator_enigma_button light_button" id="l_light_button">L</span>
+                            </div>
                         </div>
-                    </div>
-                    <hr class="enigma_simulator_breack_line">
-                    <div class="key_simulator_enigma_machine">
-                        <div class="simulator_enigma_button_container">
-                            <span class="simulator_enigma_button click_button" id="w_click_button" onclick="W_click()">W</span>
-                            <span class="simulator_enigma_button click_button" id="e_click_button" onclick="E_click()">E</span>
-                            <span class="simulator_enigma_button click_button" id="q_click_button" onclick="Q_click()">Q</span>
-                            <span class="simulator_enigma_button click_button" id="r_click_button" onclick="R_click()">R</span>
-                            <span class="simulator_enigma_button click_button" id="t_click_button" onclick="T_click()">T</span>
-                            <span class="simulator_enigma_button click_button" id="z_click_button" onclick="Z_click()">Z</span>
-                            <span class="simulator_enigma_button click_button" id="u_click_button" onclick="U_click()">U</span>
-                            <span class="simulator_enigma_button click_button" id="i_click_button" onclick="I_click()">I</span>
-                            <span class="simulator_enigma_button click_button" id="o_click_button" onclick="O_click()">O</span>
-                        </div>
+                        <hr class="enigma_simulator_breack_line">
+                        <div class="key_simulator_enigma_machine">
+                            <div class="simulator_enigma_button_container">
+                                <span class="simulator_enigma_button click_button" id="w_click_button"
+                                    onclick="W_click()">W</span>
+                                <span class="simulator_enigma_button click_button" id="e_click_button"
+                                    onclick="E_click()">E</span>
+                                <span class="simulator_enigma_button click_button" id="q_click_button"
+                                    onclick="Q_click()">Q</span>
+                                <span class="simulator_enigma_button click_button" id="r_click_button"
+                                    onclick="R_click()">R</span>
+                                <span class="simulator_enigma_button click_button" id="t_click_button"
+                                    onclick="T_click()">T</span>
+                                <span class="simulator_enigma_button click_button" id="z_click_button"
+                                    onclick="Z_click()">Z</span>
+                                <span class="simulator_enigma_button click_button" id="u_click_button"
+                                    onclick="U_click()">U</span>
+                                <span class="simulator_enigma_button click_button" id="i_click_button"
+                                    onclick="I_click()">I</span>
+                                <span class="simulator_enigma_button click_button" id="o_click_button"
+                                    onclick="O_click()">O</span>
+                            </div>
 
-                        <div class="simulator_enigma_button_container">
-                            <span class="simulator_enigma_button click_button" id="a_click_button" onclick="A_click()">A</span>
-                            <span class="simulator_enigma_button click_button" id="s_click_button" onclick="S_click()">S</span>
-                            <span class="simulator_enigma_button click_button" id="d_click_button" onclick="D_click()">D</span>
-                            <span class="simulator_enigma_button click_button" id="f_click_button" onclick="F_click()">F</span>
-                            <span class="simulator_enigma_button click_button" id="g_click_button" onclick="G_click()">G</span>
-                            <span class="simulator_enigma_button click_button" id="h_click_button" onclick="H_click()">H</span>
-                            <span class="simulator_enigma_button click_button" id="j_click_button" onclick="J_click()">J</span>
-                            <span class="simulator_enigma_button click_button" id="k_click_button" onclick="K_click()">K</span>
-                        </div>
+                            <div class="simulator_enigma_button_container">
+                                <span class="simulator_enigma_button click_button" id="a_click_button"
+                                    onclick="A_click()">A</span>
+                                <span class="simulator_enigma_button click_button" id="s_click_button"
+                                    onclick="S_click()">S</span>
+                                <span class="simulator_enigma_button click_button" id="d_click_button"
+                                    onclick="D_click()">D</span>
+                                <span class="simulator_enigma_button click_button" id="f_click_button"
+                                    onclick="F_click()">F</span>
+                                <span class="simulator_enigma_button click_button" id="g_click_button"
+                                    onclick="G_click()">G</span>
+                                <span class="simulator_enigma_button click_button" id="h_click_button"
+                                    onclick="H_click()">H</span>
+                                <span class="simulator_enigma_button click_button" id="j_click_button"
+                                    onclick="J_click()">J</span>
+                                <span class="simulator_enigma_button click_button" id="k_click_button"
+                                    onclick="K_click()">K</span>
+                            </div>
 
-                        <div class="simulator_enigma_button_container">
-                            <span class="simulator_enigma_button click_button" id="p_click_button" onclick="P_click()">P</span>
-                            <span class="simulator_enigma_button click_button" id="y_click_button" onclick="Y_click()">Y</span>
-                            <span class="simulator_enigma_button click_button" id="x_click_button" onclick="X_click()">X</span>
-                            <span class="simulator_enigma_button click_button" id="c_click_button" onclick="C_click()">C</span>
-                            <span class="simulator_enigma_button click_button" id="v_click_button" onclick="V_click()">V</span>
-                            <span class="simulator_enigma_button click_button" id="b_click_button" onclick="B_click()">B</span>
-                            <span class="simulator_enigma_button click_button" id="n_click_button" onclick="N_click()">N</span>
-                            <span class="simulator_enigma_button click_button" id="m_click_button" onclick="M_click()">M</span>
-                            <span class="simulator_enigma_button click_button" id="l_click_button" onclick="L_click()">L</span>
+                            <div class="simulator_enigma_button_container">
+                                <span class="simulator_enigma_button click_button" id="p_click_button"
+                                    onclick="P_click()">P</span>
+                                <span class="simulator_enigma_button click_button" id="y_click_button"
+                                    onclick="Y_click()">Y</span>
+                                <span class="simulator_enigma_button click_button" id="x_click_button"
+                                    onclick="X_click()">X</span>
+                                <span class="simulator_enigma_button click_button" id="c_click_button"
+                                    onclick="C_click()">C</span>
+                                <span class="simulator_enigma_button click_button" id="v_click_button"
+                                    onclick="V_click()">V</span>
+                                <span class="simulator_enigma_button click_button" id="b_click_button"
+                                    onclick="B_click()">B</span>
+                                <span class="simulator_enigma_button click_button" id="n_click_button"
+                                    onclick="N_click()">N</span>
+                                <span class="simulator_enigma_button click_button" id="m_click_button"
+                                    onclick="M_click()">M</span>
+                                <span class="simulator_enigma_button click_button" id="l_click_button"
+                                    onclick="L_click()">L</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="simulator_enigma_item_2 simulator_items">
-                    <table>
+            </section>
+            </div>
+            <!--  <div class="simulator_enigma_item_2 simulator_items">
+                     <table>
                         <tr>
-                            <th>Date</th>
-                            <th>Router</th>
-                            <th>ring Position</th>
+                            <th onright>Date</th>
+                            <th>Router</th>                            
                             <th>Plug Connection</th>
                             <th>Identification Groups</th>
                         </tr>
-                        <tr>
-                            <td>mars , 1 ,2023</td>
-                            <td>IV VI II</td>
-                            <td>23 25 30</td>
-                            <td>dk fj ua px qm pd vy az qn</td>
-                            <td>eur sic lgd evq</td>
+                        <tr onchange="DocumentChanged()">
+                            <td contenteditable="true" class="table_Date">mars , 1 ,2023</td>
+                            <td contenteditable="true" class="">IV VI II</td>
+                            <td contenteditable="true" class="">dk fj ua px qm pd vy az qn</td>
+                            <td contenteditable="true" class="">eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 2 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 3 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 4 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 5 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 6 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 7 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 8 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 9 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 10 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 11 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 12 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 13 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 14 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 15 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 16 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 17 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 18 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 19 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 20 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 21 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 22 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 23 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 24 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 25 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 26 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 27 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 28 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 29 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
                         <tr>
                             <td>mars , 30 ,2023</td>
                             <td>IV VI II</td>
-                            <td>23 25 30</td>
                             <td>dk fj ua px qm pd vy az qn</td>
                             <td>eur sic lgd evq</td>
                         </tr>
-                    </table>
-                </div>
+                    </table> 
+                </div>-->
             </div>
             <br>
     </article>
-    <img src="image/Enigmafront.jpg" alt="">
     <script src="script.js"></script>
 </body>
 

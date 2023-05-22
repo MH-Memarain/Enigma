@@ -1,3 +1,9 @@
+section.simulator_enigma_main_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 div.simulator_enigma_container{
     display:flex;
     flex-direction: column;    
@@ -56,6 +62,7 @@ div.simulator_enigma_container{
     width: 25px;
     position: relative;
 }
+
 .key_simulator_enigma_machine{
     display: flex;
     flex-direction: column;
