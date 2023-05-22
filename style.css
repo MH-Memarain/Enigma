@@ -156,11 +156,11 @@ p.text {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-  
-
-
-
-
-
-
-
+@media screen and (with : 300px){
+    .numbring_simulator_enigma_machin{
+        width: 310px;
+    }
+    body{
+        background-color: blue;
+    }
+}

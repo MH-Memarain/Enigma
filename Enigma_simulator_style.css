@@ -15,7 +15,7 @@ div.simulator_enigma_container{
     background-size: cover;
     margin: auto;
     height: 100%;    
-    width: 70%;
+    
     display: grid;
     grid-template-rows: 3fr 0fr  2.7fr 0fr 2.7fr;
     border:20px solid transparent;
@@ -146,4 +146,50 @@ div.simulator_enigma_container{
     position: absolute;
     bottom: 0px;
     cursor: pointer;
+}
+@media screen and (max-width :650px){
+    .simulator_enigma_itme_1{
+        margin: 0px;
+        display: block;        
+    }
+    .simulator_enigma_button{
+        font-size: 10px;
+        height: 40px;
+    }
+    .numbring_simulator_enigma_machin{
+        width: 100px;
+        margin: 5% 0px;
+        height: 7em;
+    }
+    .itme_router_top_simulator_enigma_machin{
+        height: 10em;
+    }
+    nav{
+        display: none;
+    }    
+    h2{
+        font-size: 2.5em;
+    } 
+    .about_world_war_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 , 1fr);
+    }   
+
+    .p_about_war_1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .img_war_1 {  
+        grid-row: 2/3;      
+        grid-column: 1/2;
+    }
+    .p_about_war_2 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .img_war_2 {  
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    
 }
